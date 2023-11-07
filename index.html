@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sopa de letras</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="sopa-de-letras">
+        <table>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <div class="controls-container">
+        <div class="inputs">
+          <label for="rows">Set rows</label>
+          <input type="text" id="rows" placeholder="Máximo 11" class="input-control" maxlength="2"/>
+        </div>
+        <div class="inputs">
+          <label for="columns">Set columns</label>
+          <input type="text" id="columns" placeholder="Máximo 11" class="input-control" maxlength="2" />
+        </div>
+        <button onclick="setTableDimensions(false)">Apply changes</button>
+        <button>Set words</button>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
