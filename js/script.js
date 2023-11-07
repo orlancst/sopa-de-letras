@@ -112,6 +112,11 @@ function selectLetter(colPos, rowPos) {
         const canSelect = validateIfAvailable(selectedWord.length, previousPosR[0], colPos, rowPos);
 
         if (!canSelect) {
+            unmarkAll();
+            previousPosR[0][0] = colPos;
+            previousPosR[0][1] = rowPos;
+            selectedWord = selLetter.innerText;
+            mark(selLetter);
             return false;
         }
         previousPosR[1][0] = colPos;
